@@ -170,11 +170,13 @@ textarea {
   transition:
     transform 180ms ease,
     background 180ms ease,
-    border-color 180ms ease;
+    border-color 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .button:hover {
   transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
 }
 
 .button:focus-visible {
@@ -251,6 +253,7 @@ textarea {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  filter: saturate(0.72) contrast(1.08) brightness(0.92);
 }
 
 .image-hero {
@@ -368,6 +371,7 @@ textarea {
 }
 
 .method-grid,
+.standard-board,
 .three-grid,
 .coach-grid,
 .membership-grid,
@@ -424,6 +428,83 @@ textarea {
 
 .facility-image {
   min-height: 560px;
+}
+
+.standard-section {
+  position: relative;
+  overflow: hidden;
+  padding: 128px 0;
+  background:
+    linear-gradient(115deg, rgba(7, 8, 10, 0.96), rgba(16, 17, 19, 0.84)),
+    radial-gradient(circle at 84% 20%, rgba(199, 151, 74, 0.14), transparent 30%),
+    var(--charcoal);
+}
+
+.standard-section::before {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  content: '';
+  opacity: 0.18;
+  background-image:
+    linear-gradient(rgba(250, 246, 238, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(250, 246, 238, 0.06) 1px, transparent 1px);
+  background-size: 84px 84px;
+  mask-image: linear-gradient(90deg, black, transparent 78%);
+}
+
+.standard-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 0.74fr) minmax(360px, 1fr);
+  gap: 72px;
+  align-items: center;
+}
+
+.standard-copy h2 {
+  margin: 12px 0 0;
+  max-width: 560px;
+  font-size: clamp(4rem, 8vw, 7.4rem);
+}
+
+.standard-copy .lead {
+  margin-top: 24px;
+  max-width: 46ch;
+}
+
+.standard-board {
+  gap: 0;
+  border-top: 1px solid rgba(250, 246, 238, 0.16);
+}
+
+.standard-row {
+  display: grid;
+  grid-template-columns: 92px 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 24px 0;
+  border-bottom: 1px solid rgba(250, 246, 238, 0.16);
+}
+
+.standard-row span {
+  font-family: var(--display);
+  color: var(--gold);
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  font-weight: 800;
+  line-height: 0.82;
+}
+
+.standard-row h3 {
+  margin: 0 0 8px;
+  color: var(--surface);
+  font-size: 1.1rem;
+}
+
+.standard-row p {
+  max-width: 48ch;
+  margin: 0;
+  color: rgba(250, 246, 238, 0.66);
+  line-height: 1.65;
 }
 
 .facility .section-heading {
@@ -528,6 +609,13 @@ textarea {
   border: 1px solid rgba(250, 246, 238, 0.16);
   border-radius: 8px;
   background: rgba(250, 246, 238, 0.05);
+}
+
+.tour-note {
+  max-width: 48ch;
+  margin: -28px 0 0;
+  color: rgba(250, 246, 238, 0.62);
+  line-height: 1.65;
 }
 
 .booking-form label {
@@ -646,6 +734,7 @@ textarea {
   .strip-grid,
   .problem-grid,
   .facility-grid,
+  .standard-grid,
   .booking-grid,
   .faq-grid,
   .method-grid,
@@ -690,6 +779,25 @@ textarea {
 
   .facility-image {
     min-height: 360px;
+  }
+
+  .standard-section {
+    padding: 80px 0;
+  }
+
+  .standard-grid {
+    gap: 40px;
+  }
+
+  .standard-copy h2 {
+    max-width: 8ch;
+    font-size: clamp(3.8rem, 16vw, 4.8rem);
+  }
+
+  .standard-row {
+    grid-template-columns: 64px 1fr;
+    gap: 16px;
+    padding: 20px 0;
   }
 
   .booking-form {

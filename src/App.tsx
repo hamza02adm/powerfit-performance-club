@@ -10,6 +10,7 @@ import { Navbar } from './components/Navbar';
 import { PositioningStrip } from './components/PositioningStrip';
 import { ProblemSection } from './components/ProblemSection';
 import { ProgramsSection } from './components/ProgramsSection';
+import { StandardSection } from './components/StandardSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 
 export default function App() {
@@ -21,6 +22,7 @@ export default function App() {
         <PositioningStrip />
         <ProblemSection />
         <MethodSection />
+        <StandardSection />
         <FacilitySection />
         <ProgramsSection />
         <CoachesSection />

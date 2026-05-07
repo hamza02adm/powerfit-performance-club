@@ -55,6 +55,10 @@ export function BookingSection() {
           title="See if PowerFit fits your week."
           body="A private tour is a calm next step: see the floor, discuss your schedule, and understand the membership path before committing."
         />
+        <p className="tour-note">
+          Most tours take 20 minutes. Bring your current schedule, one training goal, and any
+          constraint you need the coaching team to work around.
+        </p>
         <form className="booking-form" onSubmit={handleSubmit} noValidate>
           <label>
             Name

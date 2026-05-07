@@ -22,7 +22,7 @@ export function FacilitySection() {
           />
           <div className="facility-markers">
             <span>One flagship urban location</span>
-            <span>Early morning to evening access</span>
+            <span>5:30 starts for before-work sessions</span>
             <span>Capacity capped for coaching quality</span>
           </div>
           <Button href="#booking">Book a private tour</Button>

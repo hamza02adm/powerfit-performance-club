@@ -31,3 +31,6 @@
 - Reduced badge-like trust marker styling into integrated text markers.
 - Capped hero height so tall desktop viewports do not create excessive empty black space.
 - Tightened hero typography so the mobile version feels intentional without becoming chaotic.
+- Added the "45-minute standard" signature section to create a memorable identity moment without adding visual noise.
+- Unified image treatment with restrained contrast/saturation filtering so photography feels closer to one campaign system.
+- Added operational realism in the tour copy and facility markers.

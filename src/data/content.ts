@@ -29,7 +29,7 @@ export const trustMarkers = [
 export const method = [
   {
     title: 'Assessment',
-    body: 'Start with movement, schedule, and training history so the plan fits the person, not the other way around.'
+    body: 'Start with movement, schedule, sleep, and training history so the plan fits the person, not the other way around.'
   },
   {
     title: 'Programming',
@@ -41,7 +41,7 @@ export const method = [
   },
   {
     title: 'Recovery',
-    body: 'Mobility, conditioning, and recovery work are built into the plan instead of treated as optional extras.'
+    body: 'Mobility, breathing, and recovery work are built into the plan instead of treated as optional extras.'
   }
 ];
 
@@ -60,6 +60,34 @@ export const programs = [
     title: 'Mobility + Recovery',
     body: 'Guided work for joint quality, breathing, tissue prep, and long-term consistency.',
     meta: 'Built into the plan'
+  }
+];
+
+export const standardMoments = [
+  {
+    time: '00',
+    title: 'Preparation',
+    body: 'Arrive, check readiness, set the session intent, and remove the first decision.'
+  },
+  {
+    time: '08',
+    title: 'Prime',
+    body: 'Movement prep and breathing work bring the body online before load.'
+  },
+  {
+    time: '18',
+    title: 'Load',
+    body: 'Strength work stays focused: coached sets, clean rest, no wandering floor time.'
+  },
+  {
+    time: '36',
+    title: 'Capacity',
+    body: 'Conditioning is dosed to build output without stealing the rest of the week.'
+  },
+  {
+    time: '45',
+    title: 'Recovery note',
+    body: 'Leave with the next session clear and one recovery cue to carry into the day.'
   }
 ];
 
@@ -86,14 +114,14 @@ export const memberships = [
     name: 'Foundation',
     price: 'From $180/mo',
     body: 'Structured training access, movement assessment, and monthly coach review.',
-    details: ['Assessment included', 'Programming track access', 'Monthly review'],
+    details: ['Assessment included', 'Programming track access', 'Monthly coach review'],
     featured: false
   },
   {
     name: 'Performance',
     price: 'From $320/mo',
     body: 'Coach-led programming, priority training blocks, recovery guidance, and progress reviews.',
-    details: ['Priority session blocks', 'Biweekly coach review', 'Recovery support'],
+    details: ['Priority training blocks', 'Biweekly coach review', 'Recovery support'],
     featured: true
   },
   {
