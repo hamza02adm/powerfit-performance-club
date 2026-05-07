@@ -42,6 +42,7 @@
 - Vitest: 3 test files, 7 tests passing.
 - Production build: passing.
 - Axe accessibility scan: 0 violations.
+- Production Lighthouse on Vercel: Performance 80, Accessibility 100, Best Practices 96, SEO 100.
 - Responsive screenshots captured for desktop, tablet, 390px mobile, and 375px mobile.
 
 ## PowerFit v1 Lock
