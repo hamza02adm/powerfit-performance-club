@@ -34,3 +34,16 @@
 - Added the "45-minute standard" signature section to create a memorable identity moment without adding visual noise.
 - Unified image treatment with restrained contrast/saturation filtering so photography feels closer to one campaign system.
 - Added operational realism in the tour copy and facility markers.
+- Improved contrast for editorial labels and footer text after axe accessibility testing.
+- Converted site imagery to WebP and added loading/decoding hints for stable, controlled rendering.
+
+## Finalization Evidence
+
+- Vitest: 3 test files, 7 tests passing.
+- Production build: passing.
+- Axe accessibility scan: 0 violations.
+- Responsive screenshots captured for desktop, tablet, 390px mobile, and 375px mobile.
+
+## PowerFit v1 Lock
+
+PowerFit v1 is locked after this finalization pass. Future work should be treated as a new version or portfolio iteration, not casual tweaking.

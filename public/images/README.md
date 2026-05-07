@@ -4,9 +4,9 @@ Images are local Pexels-sourced photography assets selected for focused training
 
 Required crop behavior:
 
-- `hero-training.jpg`: mobile object-position should protect the subject's face and working arm tension.
-- `facility-floor.jpg`: protect the training environment and loaded movement.
-- `coach-1.jpg`, `coach-2.jpg`, `coach-3.jpg`: protect face, posture, and training focus.
+- `hero-training.webp`: mobile object-position should protect the subject's face and working arm tension.
+- `facility-floor.webp`: protect the training environment and loaded movement.
+- `coach-1.webp`, `coach-2.webp`, `coach-3.webp`: protect face, posture, and training focus.
 
 Avoid replacing these with smiling stock images, sterile empty interiors, black-on-black luxury imagery, or obviously AI-generated portraits.
 

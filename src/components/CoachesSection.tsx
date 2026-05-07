@@ -15,10 +15,12 @@ export function CoachesSection() {
             <article className="coach-card" key={coach.name}>
               <div className="coach-photo image-frame">
                 <img
-                  src={`/images/coach-${index + 1}.jpg`}
+                  src={`/images/coach-${index + 1}.webp`}
                   alt={`${coach.name}, ${coach.role}`}
                   width="520"
                   height="620"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div>

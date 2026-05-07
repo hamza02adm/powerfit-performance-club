@@ -9,6 +9,7 @@
   --steel: #5f6468;
   --border: #ddd5c8;
   --gold: #c7974a;
+  --gold-ink: #8a5b18;
   --error: #b84a3a;
   --success: #377a55;
   --container: min(1120px, calc(100vw - 40px));
@@ -80,6 +81,13 @@ textarea {
   font-weight: 800;
   letter-spacing: 0.18em;
   text-transform: uppercase;
+}
+
+.section-light .eyebrow,
+.section-surface .eyebrow,
+.positioning-strip .eyebrow,
+.faq-grid .eyebrow {
+  color: var(--gold-ink);
 }
 
 .display {
@@ -401,7 +409,7 @@ textarea {
 }
 
 .editorial-card span {
-  color: var(--gold);
+  color: var(--gold-ink);
   font-family: var(--display);
   font-size: 2.4rem;
   font-weight: 800;
@@ -424,6 +432,10 @@ textarea {
 .faq-list p {
   color: var(--muted);
   line-height: 1.65;
+}
+
+.footer p {
+  color: rgba(250, 246, 238, 0.68);
 }
 
 .facility-image {
@@ -571,6 +583,10 @@ textarea {
   background: var(--charcoal);
   color: var(--surface);
   border-color: var(--charcoal);
+}
+
+.membership-featured .eyebrow {
+  color: var(--gold);
 }
 
 .membership-featured p,

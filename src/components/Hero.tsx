@@ -20,10 +20,12 @@ export function Hero() {
         <div className="hero-panel image-frame">
           <img
             className="image-hero"
-            src="/images/hero-training.jpg"
+            src="/images/hero-training.webp"
             alt="Focused athlete training under dramatic light"
             width="720"
             height="900"
+            fetchPriority="high"
+            decoding="async"
           />
           <div className="hero-panel-note">Serious training. Controlled environment.</div>
         </div>

@@ -8,10 +8,12 @@ export function FacilitySection() {
         <div className="image-frame facility-image">
           <img
             className="image-coach"
-            src="/images/facility-floor.jpg"
+            src="/images/facility-floor.webp"
             alt="Coach guiding focused strength training on the PowerFit floor"
             width="920"
             height="680"
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div>
